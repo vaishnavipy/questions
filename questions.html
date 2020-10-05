@@ -6,14 +6,88 @@
     <head>
     
     
-        <title>SideBar JavaScript</title>
+        <title>Questions HTML</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!--  <link rel="stylesheet" href="reviews.css"> 
        <script src="reviews.js"></script>  --> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
         <script src="https://use.fontawesome.com/031e3862f6.js"></script>
 
         <style>
+            body{
+
+                background-color: #F1F5F8;
+            }
+
+            #main_content{
+                width:45vw;
+                margin: auto;
+                text-align: center;
+                margin-top: 20vh;
+
+
+            }
+            h1{
+                font-family: 'Great Vibes', cursive;
+                color:#C59D5F;
+                letter-spacing: 5px;
+                font-weight: 40px;
+                font-weight: 700;
+
+            }
+            .questions_div{
+              
+              
+               height:5vw;
+                background-color: white;
+                border-radius: 20px;
+                box-shadow: 4px 4px 16px grey;
+               margin: 40px;
+                
+            }
+
+            .question{
+                padding: 20px;
+                margin: 0;
+              
+                float: left;
+                letter-spacing: 2px;
+                font-size: 20px;
+            }
+            .plus_icon{
+             
+                float:right;
+                font-size: 1.5rem;
+                padding: 20px;
+                color:#C59D5F;
+            }
+            .hidden_class{
+                clear:both;
+                display: none;
+
+            }
+            .hr_line{
+
+                border: 0.5px solid #CCCCCC;
+               
+                margin-left: 15px;
+                margin-right: 15px;
+
+            }
+            .drop_down{
+
+                color:#617D98;
+                font-size: 16px;
+                text-align: left;
+                padding: 20px;
+                padding-top: 5px;
+                letter-spacing: 1px;
+                
+            }
+
+
+
 
 
         </style>
@@ -24,6 +98,69 @@
 
 
     <body>
+
+       
+        <div id="main_content">
+
+            <h1>General Questions</h1>
+
+            <div class="questions_div">
+
+                <p class="question">Do you accept all major credite cards?</p>
+                <span id="first" class="plus_icon">
+
+                    <i class="fa fa-plus-square"></i>
+                </span>
+
+                <div class="hidden_class">
+                  
+                    <div class="hr_line"></div>
+                    <p class="drop_down">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="questions_div">
+
+                <p class="question">Do you support Local Farmers?</p>
+                <span id="second" class="plus_icon">
+
+                    <i class="fa fa-plus-square"></i>
+                </span>
+
+
+            </div>
+
+            <div class="questions_div">
+
+                <p class="question">Do you use Organic Ingredients?</p>
+                <span id="third" class="plus_icon">
+
+                    <i class="fa fa-plus-square"></i>
+                </span>
+
+
+            </div>
+            
+
+
+        </div>
+
+        <script>
+            
+
+
+
+
+        </script>
+    
      
    
     </body>
