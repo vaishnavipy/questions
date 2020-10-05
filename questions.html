@@ -8,131 +8,13 @@
     
         <title>Questions HTML</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--  <link rel="stylesheet" href="reviews.css"> 
-       <script src="reviews.js"></script>  --> 
+    <link rel="stylesheet" href="questions.css"> 
+       <script src="questions.js"></script>  
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
         <script src="https://use.fontawesome.com/031e3862f6.js"></script>
 
-        <style>
-            body{
-
-                background-color: #F1F5F8;
-            }
-
-            #main_content{
-                width:49vw;
-                margin: auto;
-                text-align: center;
-                margin-top: 20vh;
-
-
-            }
-            h1{
-                font-family: 'Great Vibes', cursive;
-                color:#C59D5F;
-                letter-spacing: 5px;
-                font-weight: 40px;
-                font-weight: 700;
-
-            }
-            .questions_div{
-              
-              width: auto;
-               
-                background-color: white;
-                border-radius: 20px;
-                box-shadow: 4px 4px 16px grey;
-               margin: 20px;
-               overflow: hidden;
-                
-            }
-
-            .question{
-                padding: 20px;
-                margin: 0;
-              
-                float: left;
-                letter-spacing: 2px;
-                font-size: 20px;
-            }
-            .plus_icon{
-             
-                float:right;
-                font-size: 1.5rem;
-                padding: 20px;
-                color:#C59D5F;
-                cursor: pointer;
-                transition: transform 1s;
-            }
-
-
-            .plus_icon:hover{
-
-                transform: rotate(180deg);
-            }
-
-
-            .hidden_class{
-                clear:both;
-                display: none;
-
-            }
-            .hr_line{
-
-                border: 0.5px solid #CCCCCC;
-               
-                margin-left: 15px;
-                margin-right: 15px;
-
-            }
-            .drop_down{
-
-                color:#617D98;
-                font-size: 16px;
-                text-align: left;
-                padding: 20px;
-                padding-top: 5px;
-                letter-spacing: 1px;
-                
-            }
-            @media only screen and (max-width:700px){
-
-                #main_content{
-                width:90vw;
-               
-                
-                }
-                .question{
-                    font-size: 15px;
-                }
-
-
-
-
-            }
-            @media only screen and (max-width:1000px){
-
-                #main_content{
-                width:90vw;
-
-
-                }
-                .question{
-                    font-size: 15px;
-                }
-
-
-
-
-}
-
-
-
-
-
-
-        </style>
+       
         
     
         
@@ -219,41 +101,7 @@
 
         </div>
 
-        <script>
-            window.onload = function(){
-
-             let plus_elm =   document.querySelectorAll(".plus_icon");
-             plus_elm.forEach( element => element.addEventListener("click",expand_func) )
-
-
-                function expand_func(){
-
-                    if( this.nextElementSibling.style.display == "block" ){
-                        
-                        this.innerHTML="<i class='fa fa-plus-square'></i>"
-                        
-                        this.nextElementSibling.style.display ="none" 
-
-                    }else{
-
-                        this.innerHTML="<i class='fa fa-minus-square'></i>"
-                       
-                        this.nextElementSibling.style.display ="block" 
-
-                    }
-
-                   
-                }
-
-
-
-            }
-
-
-
-
-        </script>
-    
+       
      
    
     </body>
