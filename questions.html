@@ -21,7 +21,7 @@
             }
 
             #main_content{
-                width:45vw;
+                width:49vw;
                 margin: auto;
                 text-align: center;
                 margin-top: 20vh;
@@ -38,12 +38,13 @@
             }
             .questions_div{
               
-              
-               height:5vw;
+              width: auto;
+               
                 background-color: white;
                 border-radius: 20px;
                 box-shadow: 4px 4px 16px grey;
-               margin: 40px;
+               margin: 20px;
+               overflow: hidden;
                 
             }
 
@@ -61,7 +62,17 @@
                 font-size: 1.5rem;
                 padding: 20px;
                 color:#C59D5F;
+                cursor: pointer;
+                transition: transform 1s;
             }
+
+
+            .plus_icon:hover{
+
+                transform: rotate(180deg);
+            }
+
+
             .hidden_class{
                 clear:both;
                 display: none;
@@ -85,6 +96,37 @@
                 letter-spacing: 1px;
                 
             }
+            @media only screen and (max-width:700px){
+
+                #main_content{
+                width:90vw;
+               
+                
+                }
+                .question{
+                    font-size: 15px;
+                }
+
+
+
+
+            }
+            @media only screen and (max-width:1000px){
+
+                #main_content{
+                width:90vw;
+
+
+                }
+                .question{
+                    font-size: 15px;
+                }
+
+
+
+
+}
+
 
 
 
@@ -135,6 +177,18 @@
                     <i class="fa fa-plus-square"></i>
                 </span>
 
+                <div class="hidden_class">
+                  
+                    <div class="hr_line"></div>
+                    <p class="drop_down">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+
+
+                    </p>
+
+                </div>
+
 
             </div>
 
@@ -146,6 +200,18 @@
                     <i class="fa fa-plus-square"></i>
                 </span>
 
+                <div class="hidden_class">
+                  
+                    <div class="hr_line"></div>
+                    <p class="drop_down">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+
+
+                    </p>
+
+                </div>
+
 
             </div>
             
@@ -154,7 +220,34 @@
         </div>
 
         <script>
-            
+            window.onload = function(){
+
+             let plus_elm =   document.querySelectorAll(".plus_icon");
+             plus_elm.forEach( element => element.addEventListener("click",expand_func) )
+
+
+                function expand_func(){
+
+                    if( this.nextElementSibling.style.display == "block" ){
+                        
+                        this.innerHTML="<i class='fa fa-plus-square'></i>"
+                        
+                        this.nextElementSibling.style.display ="none" 
+
+                    }else{
+
+                        this.innerHTML="<i class='fa fa-minus-square'></i>"
+                       
+                        this.nextElementSibling.style.display ="block" 
+
+                    }
+
+                   
+                }
+
+
+
+            }
 
 
 
